@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HotelBooking</string>
+    <string name="login">Login</string>
+    <string name="signup">Register</string>
+    <string name="hotelbooking">HotelBooking</string>
+    <string name="later">later</string>
+    <string name="unavailable">Unavailable</string>
+    <string name="available">Available</string>
+</resources>

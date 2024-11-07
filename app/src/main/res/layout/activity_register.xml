@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RegisterActivity"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="538dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/tv_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="6dp"
+                android:fontFamily="@font/pacifico"
+                android:text="SignUp"
+                android:textSize="30sp" />
+
+            <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                android:id="@+id/bar"
+                android:layout_width="120dp"
+                android:layout_height="5dp"
+                android:layout_below="@id/tv_signup"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="6dp"
+                app:cardBackgroundColor="@color/black"
+                app:cardCornerRadius="20dp">
+
+            </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+            <EditText
+                android:id="@+id/edSingUpEmail"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/bar"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="10dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+
+            <EditText
+                android:id="@+id/edtPhone"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/bar"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="89dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:drawableLeft="@drawable/note"
+                android:drawablePadding="10dp"
+                android:hint="Phone number"
+                android:inputType="textEmailAddress"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/edSingUpUsername"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/bar"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="153dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:drawableLeft="@drawable/profile"
+                android:drawablePadding="10dp"
+                android:hint="Username"
+                android:inputType="text"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/edSignUpPassword"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/edSingUpEmail"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="127dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:drawableLeft="@drawable/lock"
+                android:drawablePadding="10dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/edConfirmSignUpPassword"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/edSignUpPassword"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:drawableLeft="@drawable/lock"
+                android:drawablePadding="10dp"
+                android:hint="Password confirmation"
+                android:inputType="textPassword"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_SignUp_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="47dp"
+                android:layout_below="@+id/edConfirmSignUpPassword"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="156dp"
+                android:layout_marginTop="34dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="153dp"
+                android:layout_marginBottom="61dp"
+                android:background="#000"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Submit"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_SignUp_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
